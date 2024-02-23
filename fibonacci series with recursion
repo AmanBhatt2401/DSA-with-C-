@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int count=2;
+void fab(int prev1,int prev2){    //recursion function
+    if(count<=19){
+        int newfab=prev1+prev2;
+        cout<<newfab<<endl;
+        prev2=prev1;
+        prev1=newfab;
+        count +=1;
+        fab(prev1,prev2);
+    }
+    else {
+        return;
+    }
+}
+int main()
+{
+    int prev1=0,prev2=1;
+   cout<<prev1<<endl;
+   cout<<prev2<<endl;
+    
+    fab(1,0);
+    return 0;
+}

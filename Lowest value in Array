@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int arr[]={2,4,5,7,6,1,2,34,45,75};
+    int size=sizeof(arr)/sizeof(arr[0]);
+    int min_value=arr[0];
+    
+    
+    for(int i=0;i<size;i++){
+        if(min_value>arr[i]){
+            min_value=arr[i];
+        }
+    }
+        cout<<min_value;
+    return 0;
+}
